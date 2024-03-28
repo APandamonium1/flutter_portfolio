@@ -30,6 +30,16 @@ class _SplashScreenState extends State<SplashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            AnimatedImageContainer(
+              width: 100,
+              height: 100,
+            ),
+            SizedBox(
+              height: defaultPadding,
+            ),
+            AnimatedLoadingText(),
+          ],
         ),
       ),
     );
