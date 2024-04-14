@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/screens/splash/splash_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_portfolio/constant.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: bgColor,
         useMaterial3: true,
+        textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
+            .apply(
+              bodyColor: Colors.white,
+            )
+            .copyWith(
+              bodyLarge: const TextStyle(color: bodyTextColor),
+              bodyMedium: const TextStyle(color: bodyTextColor),
+            ),
       ),
       home: SplashPage(),
     );
