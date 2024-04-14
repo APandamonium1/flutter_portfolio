@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/screens/main/main_page.dart';
+import 'package:flutter_portfolio/screens/intro/intro.dart';
+import 'package:flutter_portfolio/screens/projects/projects_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MainPage(pages: [
+      const IntroPage(),
+      ProjectsPage(),
+      // Certifications(),
+    ]);
   }
 }

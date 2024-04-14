@@ -31,14 +31,14 @@ class _SplashScreenState extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            AnimatedImageContainer(
-              width: 100,
-              height: 100,
-            ),
+            // AnimatedImageContainer(
+            //   width: 100,
+            //   height: 100,
+            // ),
             SizedBox(
               height: defaultPadding,
             ),
-            AnimatedLoadingText(),
+            // AnimatedLoadingText(),
           ],
         ),
       ),
