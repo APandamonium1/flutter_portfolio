@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'package:flutter_portfolio/view_model/responsive.dart';
 
 class AnimatedImageContainer extends StatefulWidget {
   const AnimatedImageContainer({Key? key, this.height = 300, this.width = 250})
