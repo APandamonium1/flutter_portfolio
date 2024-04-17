@@ -72544,7 +72544,7 @@ $3(a,b,c){var s,r=null,q=A.aq(a).p3.d
 q.toString
 s=$.a7().aW()
 s.siY(new A.fb(B.b6,B.aQ,B.a0,A.a([B.av,B.aM],t.W),r,r).vi(0,new A.B(0,0,200,70)))
-return A.dP("Xu Jiawei",r,r,q.a8e(b,B.d2,s,0))},
+return A.dP("Jiawei",r,r,q.a8e(b,B.d2,s,0))},
 $S:66}
 A.Hj.prototype={
 J(a){var s,r=null,q=t.w,p=A.b8(a,B.C,q).w.a,o=t.p,n=A.a([],o)
@@ -72617,7 +72617,7 @@ $0(){A.jG(A.dQ("https://wa.me/",0,null))},
 $S:0}
 A.DR.prototype={
 J(a){var s=null
-return new A.E5(1.23,A.cN(s,A.jU(A.a([B.fo,B.Fv,B.al,A.dP("Xu Jiawei",s,s,A.aq(a).p3.x),B.Py,B.V4,B.fo],t.p),B.K,B.I),B.q,B.cW,s,s,s,s,s,s,s,s,s),s)}}
+return new A.E5(1.23,A.cN(s,A.jU(A.a([B.fo,B.Fv,B.al,A.dP("Jiawei",s,s,A.aq(a).p3.x),B.Py,B.V4,B.fo],t.p),B.K,B.I),B.q,B.cW,s,s,s,s,s,s,s,s,s),s)}}
 A.Fe.prototype={
 J(a){var s=null
 return A.cN(s,A.e0(A.a([B.al,A.akH(A.M_("assets/icons/linkedin.svg",s,s),new A.XY()),A.akH(A.M_("assets/icons/github.svg",s,s),new A.XZ()),B.al],t.p),B.K,B.I,B.P),B.q,s,s,s,s,s,B.FI,s,s,s,s)}}

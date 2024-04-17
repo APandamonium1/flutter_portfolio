@@ -19,7 +19,7 @@ class About extends StatelessWidget {
             const DrawerImage(),
             const Spacer(),
             Text(
-              'Xu Jiawei',
+              'Jiawei',
               style: Theme.of(context).textTheme.titleSmall,
             ),
             const SizedBox(

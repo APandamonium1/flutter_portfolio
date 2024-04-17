@@ -12,7 +12,7 @@ class MyPortfolioText extends StatelessWidget {
         tween: Tween(begin: start, end: end),
         duration: const Duration(milliseconds: 200),
         builder: (context, value, child) {
-          return Text('Xu Jiawei',
+          return Text('Jiawei',
               // style: Theme.of(context).textTheme.headlineLarge!.copyWith(
               //     // color: Colors.white,
               //     color: Color.fromARGB(255, 145, 5, 226),
