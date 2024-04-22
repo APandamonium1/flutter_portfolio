@@ -13,7 +13,7 @@ class ConnectButton extends StatelessWidget {
       child: InkWell(
         onTap: () {
           //TODO: change maybe not WhatsApp
-          launchUrl(Uri.parse('https://wa.me/'));
+          launchUrl(Uri.parse('https://github.com/APandamonium1/'));
         },
         borderRadius: BorderRadius.circular(defaultPadding + 10),
         child: Container(
@@ -40,13 +40,13 @@ class ConnectButton extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Icon(
-                  FontAwesomeIcons.whatsapp,
-                  color: Colors.greenAccent,
+                  FontAwesomeIcons.github,
+                  color: Colors.blueGrey,
                   size: 15,
                 ),
                 const SizedBox(width: defaultPadding / 4),
                 Text(
-                  'Whatsapp',
+                  'Github',
                   style: Theme.of(context).textTheme.labelSmall!.copyWith(
                       color: Colors.white,
                       letterSpacing: 1.2,
