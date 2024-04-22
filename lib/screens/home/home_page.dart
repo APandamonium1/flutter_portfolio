@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/screens/main/main_page.dart';
 import 'package:flutter_portfolio/screens/intro/intro.dart';
 import 'package:flutter_portfolio/screens/projects/projects_page.dart';
+import 'package:flutter_portfolio/screens/certifications/certs_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
     return MainPage(pages: [
       const IntroPage(),
       ProjectsPage(),
-      // Certifications(),
+      CertsPage(),
     ]);
   }
 }
