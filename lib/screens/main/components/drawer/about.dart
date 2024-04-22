@@ -26,7 +26,7 @@ class About extends StatelessWidget {
               height: defaultPadding / 4,
             ),
             const Text(
-              'Year 3 Diploma in Cybersecurity and\nDigital Foresnsics Student',
+              'Year 3 Diploma in Cybersecurity and\nDigital Forensics Student',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w200, height: 1.5),
             ),
