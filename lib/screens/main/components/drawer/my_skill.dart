@@ -34,7 +34,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                     style: const TextStyle(color: Colors.white),
                   ),
                   const Spacer(),
-                  Text('${(value * 100).toInt().toString()}%'),
+                  // Text('${(value * 100).toInt().toString()}%'),
                 ],
               ),
               const SizedBox(
@@ -62,18 +62,18 @@ class MySKills extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         AnimatedLinearProgressIndicator(
-          percentage: 0.1,
+          percentage: 1,
           title: 'Flutter',
           image: 'assets/icons/flutter.png',
         ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.1, title: 'Dart', image: 'assets/icons/dart.png'),
+            percentage: 1, title: 'Dart', image: 'assets/icons/dart.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.1,
+            percentage: 1,
             title: 'Firebase',
             image: 'assets/icons/firebase.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.1,
+            percentage: 1,
             title: 'Responsive Design',
             image: 'assets/icons/flutter.png'),
       ],
