@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_portfolio/view_model/getx_controllers/certification_controller.dart';
 import 'package:flutter_portfolio/screens/certifications/components/title_text.dart';
 import 'package:get/get.dart';
@@ -21,7 +20,7 @@ class CertsPage extends StatelessWidget {
             const SizedBox(
               height: defaultPadding,
             ),
-          const TitleText(prefix: 'Certifications & ', title: 'License'),
+          const TitleText(prefix: 'My ', title: 'Certifications'),
           const SizedBox(
             height: defaultPadding,
           ),
