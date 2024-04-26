@@ -32,7 +32,7 @@ class CertificateStack extends StatelessWidget {
               children: [
                 Text(
                   certificateList[index].name,
-                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -44,7 +44,7 @@ class CertificateStack extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      certificateList[index].organization,
+                      certificateList[index].organisation,
                       style: const TextStyle(color: Colors.amber),
                     ),
                     Text(
