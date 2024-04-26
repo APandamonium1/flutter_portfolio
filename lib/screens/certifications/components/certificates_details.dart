@@ -49,7 +49,7 @@ class CertificateStack extends StatelessWidget {
                     ),
                     Text(
                       certificateList[index].date,
-                      style: const TextStyle(color: Colors.grey, fontSize: 12),
+                      style: const TextStyle(color: Colors.grey, fontSize: 15),
                     ),
                   ],
                 ),
