@@ -57,9 +57,9 @@ class CertificateStack extends StatelessWidget {
                   height: defaultPadding / 2,
                 ),
                 Text.rich(
-                  maxLines: 1,
+                  maxLines: 2,
                   TextSpan(
-                      text: 'Skills : ',
+                      text: 'Skills: ',
                       style: const TextStyle(
                         color: Colors.white,
                       ),
@@ -103,7 +103,7 @@ class CertificateStack extends StatelessWidget {
                       children: [
                         Text(
                           'Credentials',
-                          style: TextStyle(color: Colors.white, fontSize: 10),
+                          style: TextStyle(color: Colors.white, fontSize: 12),
                         ),
                         SizedBox(
                           width: 5,
