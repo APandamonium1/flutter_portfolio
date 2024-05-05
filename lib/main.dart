@@ -3,7 +3,7 @@ import 'package:flutter_portfolio/screens/splash/splash_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_portfolio/constant.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'package:flutter_portfolio/firebase_options.dart';
 
 void main() async {
   await Firebase.initializeApp(

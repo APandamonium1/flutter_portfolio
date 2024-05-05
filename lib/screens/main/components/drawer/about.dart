@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'drawer_image.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/drawer_image.dart';
 
 class About extends StatelessWidget {
   const About({super.key});

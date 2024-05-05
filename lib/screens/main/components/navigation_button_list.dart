@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view_model/controller.dart';
 import 'package:flutter_portfolio/view_model/responsive.dart';
-
-import 'navigation_button.dart';
+import 'package:flutter_portfolio/screens/main/components/navigation_button.dart';
 
 class NavigationButtonList extends StatelessWidget {
   const NavigationButtonList({super.key});

@@ -3,8 +3,8 @@ import 'package:flutter_portfolio/constant.dart';
 import 'package:flutter_portfolio/view_model/controller.dart';
 import 'package:flutter_portfolio/screens/main/components/navigation_bar.dart';
 import 'package:flutter_portfolio/view_model/responsive.dart';
-import 'components/drawer/drawer.dart';
-import 'components/navigation_button_list.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/drawer.dart';
+import 'package:flutter_portfolio/screens/main/components/navigation_button_list.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class MainPage extends StatelessWidget {

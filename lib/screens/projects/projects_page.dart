@@ -4,7 +4,7 @@ import 'package:flutter_portfolio/view_model/getx_controllers/projects_controlle
 import 'package:flutter_portfolio/view_model/responsive.dart';
 import 'package:flutter_portfolio/screens/projects/components/title_text.dart';
 import 'package:get/get.dart';
-import 'components/projects_grid.dart';
+import 'package:flutter_portfolio/screens/projects/components/projects_grid.dart';
 
 class ProjectsPage extends StatelessWidget {
   ProjectsPage({super.key});

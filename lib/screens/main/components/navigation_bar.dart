@@ -3,7 +3,7 @@ import 'package:flutter_portfolio/view_model/responsive.dart';
 import 'package:flutter_portfolio/screens/intro/components/side_menu_button.dart';
 import 'package:flutter_portfolio/screens/main/components/connect_button.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'navigation_button_list.dart';
+import 'package:flutter_portfolio/screens/main/components/navigation_button_list.dart';
 import 'package:flutter_portfolio/view_model/controller.dart';
 
 class TopNavigationBar extends StatelessWidget {

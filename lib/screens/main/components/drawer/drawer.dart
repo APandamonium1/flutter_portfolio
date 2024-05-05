@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/screens/main/components/drawer/contact_icons.dart';
 import 'package:flutter_portfolio/screens/main/components/drawer/personal_info.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'knowledges.dart';
-import 'about.dart';
-import 'my_skill.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/knowledges.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/about.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/my_skill.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

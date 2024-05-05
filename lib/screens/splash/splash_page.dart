@@ -23,6 +23,7 @@ class _SplashScreenState extends State<SplashPage> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: bgColor,

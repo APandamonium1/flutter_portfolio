@@ -2,11 +2,11 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant.dart';
 import 'package:flutter_portfolio/view_model/responsive.dart';
-import 'animated_texts_components.dart';
-import 'combine_subtitle.dart';
-import 'description_text.dart';
-import 'download_button.dart';
-import 'headline_text.dart';
+import 'package:flutter_portfolio/screens/intro/components/animated_texts_components.dart';
+import 'package:flutter_portfolio/screens/intro/components/combine_subtitle.dart';
+import 'package:flutter_portfolio/screens/intro/components/description_text.dart';
+import 'package:flutter_portfolio/screens/intro/components/download_button.dart';
+import 'package:flutter_portfolio/screens/intro/components/headline_text.dart';
 
 class IntroBody extends StatelessWidget {
   const IntroBody({super.key});

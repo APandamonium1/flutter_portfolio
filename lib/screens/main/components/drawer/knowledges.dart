@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'knowledge.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/knowledge.dart';
 
 class Knowledges extends StatelessWidget {
   const Knowledges({super.key});

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:flutter_portfolio/model/certificate_model.dart';
 import 'package:flutter_portfolio/constant.dart';
 import 'package:flutter_portfolio/view_model/getx_controllers/certification_controller.dart';
-import 'certificates_details.dart';
+import 'package:flutter_portfolio/screens/certifications/components/certificates_details.dart';
 
 class CertificateGrid extends StatelessWidget {
   final int crossAxisCount;

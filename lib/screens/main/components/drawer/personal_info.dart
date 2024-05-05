@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'header_info.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/header_info.dart';
 
 class PersonalInfo extends StatelessWidget {
   const PersonalInfo({super.key});
