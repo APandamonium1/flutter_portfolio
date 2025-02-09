@@ -22,11 +22,11 @@ jobs:
 
       - run: flutter --version
 
-      # - run: flutter build web
-
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JW_FLUTTER_PORTFOLIO }}
           channelId: live
           projectId: jw-flutter-portfolio
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
