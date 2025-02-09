@@ -53,12 +53,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAJDEaeNaV0WOrrjUekCpbqLgKHQgm0Q3E',
-    appId: '1:438618601449:web:2c4bbbbb418a8edfe7bd78',
-    messagingSenderId: '438618601449',
-    projectId: 'jw-flutter-portfolio',
-    authDomain: 'jw-flutter-portfolio.firebaseapp.com',
-    storageBucket: 'jw-flutter-portfolio.appspot.com',
-    measurementId: 'G-HQ9XWDSBDD',
+    apiKey: "AIzaSyAJDEaeNaV0WOrrjUekCpbqLgKHQgm0Q3E",
+    authDomain: "jw-flutter-portfolio.firebaseapp.com",
+    projectId: "jw-flutter-portfolio",
+    storageBucket: "jw-flutter-portfolio.firebasestorage.app",
+    messagingSenderId: "438618601449",
+    appId: "1:438618601449:web:2c4bbbbb418a8edfe7bd78",
+    measurementId: "G-HQ9XWDSBDD",
   );
 }
