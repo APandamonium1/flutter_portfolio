@@ -36,11 +36,11 @@ jobs:
         uses: discord-actions/message@v2
         with:
           webhookUrl: ${{secrets.DISCORD_WEBHOOK}}
-          message: SUCCESSFULLLL in branch ${{github.ref}} by ${{github.actor}}
+          message: SUCCESSFUL in branch ${{github.ref}} by ${{github.actor}} on pull request
 
       - if: ${{failure()}}
         name: Failure Message (Discord)
         uses: discord-actions/message@v2
         with:
           webhookUrl: ${{secrets.DISCORD_WEBHOOK}}
-          message: FAILUREEEE in branch ${{github.ref}} by ${{github.actor}}
+          message: FAILURE in branch ${{github.ref}} by ${{github.actor}} on pull request
