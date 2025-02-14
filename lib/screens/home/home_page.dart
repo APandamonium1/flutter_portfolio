@@ -4,6 +4,8 @@ import 'package:flutter_portfolio/screens/intro/intro.dart';
 import 'package:flutter_portfolio/screens/projects/projects_page.dart';
 import 'package:flutter_portfolio/screens/certifications/certs_page.dart';
 import 'package:flutter_portfolio/screens/about/about_page.dart';
+import 'package:flutter_portfolio/screens/work/work_page.dart';
+import 'package:flutter_portfolio/screens/education/education_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,6 +15,8 @@ class HomePage extends StatelessWidget {
     return MainPage(pages: [
       const IntroPage(),
       AboutPage(),
+      WorkPage(),
+      EducationPage(),
       ProjectsPage(),
       CertsPage(),
     ]);

@@ -24,7 +24,7 @@ class NavigationButtonList extends StatelessWidget {
                   },
                   text: 'Home'),
               if (!Responsive.isLargeMobile(context))
-                NavigationTextButton(onTap: () {}, text: 'About '),
+                // NavigationTextButton(onTap: () {}, text: 'About '),
                 NavigationTextButton(
                     onTap: () {
                       controller.animateToPage(1,
@@ -32,16 +32,30 @@ class NavigationButtonList extends StatelessWidget {
                           curve: Curves.easeIn);
                     },
                     text: 'About'),
-                NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(2,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'Projects'),
+              NavigationTextButton(
+                  onTap: () {
+                    controller.animateToPage(2,
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  },
+                  text: 'Work Experiences'),
               NavigationTextButton(
                   onTap: () {
                     controller.animateToPage(3,
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  },
+                  text: 'Education'),
+              NavigationTextButton(
+                  onTap: () {
+                    controller.animateToPage(4,
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  },
+                  text: 'Projects'),
+              NavigationTextButton(
+                  onTap: () {
+                    controller.animateToPage(5,
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeIn);
                   },
