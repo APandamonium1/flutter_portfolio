@@ -27,11 +27,11 @@ class EducationPage extends StatelessWidget {
           Expanded(
               child: Responsive(
                   desktop: EducationGrid(
-                    crossAxisCount: 3,
+                    crossAxisCount: 2,
+                    ratio: 1.5,
                   ),
-                  extraLargeScreen: EducationGrid(
-                    crossAxisCount: 4,
-                  ),
+                  extraLargeScreen:
+                      EducationGrid(crossAxisCount: 3, ratio: 1.6),
                   largeMobile: EducationGrid(crossAxisCount: 1, ratio: 1.8),
                   mobile: EducationGrid(crossAxisCount: 1, ratio: 1.5),
                   tablet: EducationGrid(
