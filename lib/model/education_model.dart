@@ -60,7 +60,8 @@ List<EducationModel> educationList = [
   EducationModel(
     school: 'Ngee Ann Polytechnic',
     year: '2022 - 2025',
-    description: 'Diploma in Cybersucrity & Digital Forensics (CSF)',
+    description:
+        'Diploma in Cybersecurity & Digital Forensics (CSF), Diploma Plus/Certificate in Advanced Computing Mathematics (CACM)',
     bulletPoints: [
       BulletPoint(
         text: 'Overflow Technology Special Interest Group',

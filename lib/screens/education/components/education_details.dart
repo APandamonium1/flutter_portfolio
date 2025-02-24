@@ -39,7 +39,7 @@ class EducationDetail extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(
-                  height: defaultPadding,
+                  height: defaultPadding / 2,
                 ),
 
                 Row(
