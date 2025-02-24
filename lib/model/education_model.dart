@@ -37,7 +37,7 @@ List<EducationModel> educationList = [
         text: 'FALCONS Leadership Programme',
         subPoints: [
           'Organised CCA Bazaar for the Secondary 1 cohort',
-          'Handled stage lighting'
+          'Learnt and practised leadership skills on hiking trip to Hong Kong'
         ],
       ),
     ],
