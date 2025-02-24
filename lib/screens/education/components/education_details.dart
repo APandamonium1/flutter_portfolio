@@ -124,15 +124,17 @@ class EducationDetail extends StatelessWidget {
                                                     style: TextStyle(
                                                         color: Colors
                                                             .white70)), // Smaller Bullet Symbol
-                                                Text(
-                                                  subPoint,
-                                                  style: Theme.of(context)
-                                                      .textTheme
-                                                      .bodySmall!
-                                                      .copyWith(
-                                                        color: Colors.white60,
-                                                      ),
-                                                  softWrap: true,
+                                                Expanded(
+                                                  child: Text(
+                                                    subPoint,
+                                                    style: Theme.of(context)
+                                                        .textTheme
+                                                        .bodySmall!
+                                                        .copyWith(
+                                                          color: Colors.white60,
+                                                        ),
+                                                    softWrap: true,
+                                                  ),
                                                 ),
                                                 const SizedBox(
                                                   height: defaultPadding / 3,
@@ -142,7 +144,27 @@ class EducationDetail extends StatelessWidget {
                                           )
                                           .toList(),
                                     ),
-                                  )
+                                  ),
+                                // // "More" Button
+                                // Align(
+                                //   alignment: Alignment.bottomRight,
+                                //   child: GestureDetector(
+                                //     onTap: () {
+                                //       // TODO: Implement show more functionality
+                                //     },
+                                //     child: Text(
+                                //       "More",
+                                //       style: TextStyle(
+                                //         color: Colors.blue,
+                                //         decoration: TextDecoration.underline,
+                                //         fontSize: Theme.of(context)
+                                //             .textTheme
+                                //             .bodySmall!
+                                //             .fontSize,
+                                //       ),
+                                //     ),
+                                //   ),
+                                // ),
                               ],
                             ),
                           ))

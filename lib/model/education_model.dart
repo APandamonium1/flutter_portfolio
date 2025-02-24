@@ -24,15 +24,21 @@ List<EducationModel> educationList = [
     school: 'NAN CHIAU HIGH SCHOOL',
     year: '2016 - 2019',
     description:
-        'This is a description of what happened. I was a student at this time.',
+        'Cambridge - Singapore GCE Ordinary Level (O-Level) Examination subjects: English, Mathematics, Additional Mathematics, Physics, Chemistry, Combined Humanities (Geography, Social Studies), Chinese Language, Higher Chinese Language',
     bulletPoints: [
       BulletPoint(
-        text: 'National Police Cadet Corps',
-        subPoints: ['Led robotics competition', 'Organized science fair'],
+        text: 'National Police Cadet Corps (NPCC)',
+        subPoints: [
+          'Squadmasters Overall In-Charge (EXCO)',
+          '12th place in Inter-Unit Campcraft Competition 2017'
+        ],
       ),
       BulletPoint(
-        text: 'Member of Drama Society',
-        subPoints: ['Performed in annual play', 'Handled stage lighting'],
+        text: 'FALCONS Leadership Programme',
+        subPoints: [
+          'Organised CCA Bazaar for the Secondary 1 cohort',
+          'Handled stage lighting'
+        ],
       ),
     ],
   ),
@@ -40,7 +46,7 @@ List<EducationModel> educationList = [
     school: 'Temasek Junior College',
     year: '2020 - 2021',
     description:
-        'This is a description of what happened. I was a student at this time.',
+        'Cambridge - Singapore GCE Advanced Level (A-Level) Examination subjects: General Paper (H1), Project Workd (H1), Economics (H1), Mathematics (H2), Physics (H2), Chemistry (H2)',
     bulletPoints: [
       BulletPoint(
         text: 'Guitar Ensemble (JC)',
@@ -54,8 +60,7 @@ List<EducationModel> educationList = [
   EducationModel(
     school: 'Ngee Ann Polytechnic',
     year: '2022 - 2025',
-    description:
-        'This is a description of what happened. I was a student at this time.',
+    description: 'Diploma in Cybersucrity & Digital Forensics (CSF)',
     bulletPoints: [
       BulletPoint(
         text: 'Overflow Technology Special Interest Group',

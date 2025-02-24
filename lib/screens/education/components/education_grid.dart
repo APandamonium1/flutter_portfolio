@@ -11,6 +11,8 @@ class EducationGrid extends StatelessWidget {
   // The aspect ratio of the grid items. A value greater than 1.0 makes items
   // longer (taller) vertically. Defaults to 2.0.
   final double ratio;
+  // Create a ScrollController
+  final ScrollController scrollController = ScrollController();
   // Constructor for the EducationGrid widget, with default values for grid
   // columns (2) and ratio (2.0 for longer grids).
   EducationGrid({super.key, this.crossAxisCount = 2, this.ratio = 1.3});
@@ -50,6 +52,17 @@ class EducationGrid extends StatelessWidget {
                   ),
                 ]),
             child: EducationDetail(index: index)));
+        //   // Wrap the content with SingleChildScrollView and RawScrollbar
+        //   child: RawScrollbar(
+        //     thumbColor: Colors.grey, // Grey color for the scrollbar
+        //     radius: const Radius.circular(10),
+        //     thickness: 6.0,
+        //     thumbVisibility: true,
+        //     child: SingleChildScrollView(
+        //       child: EducationDetail(index: index),
+        //     ),
+        //   ),
+        // ));
       },
     );
   }
