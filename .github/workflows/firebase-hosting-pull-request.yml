@@ -20,12 +20,8 @@ jobs:
           channel: 'stable'
           flutter-version: '3.19.5'
 
-      - run: flutter --version
-
-      # - name: Install dependencies
-      #   run: flutter pub get
-
-      # - run: flutter build web
+      - name: Check Flutter version
+        run: flutter --version
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -34,3 +30,17 @@ jobs:
           projectId: jw-flutter-portfolio
         env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
+      
+      - if: ${{success()}}
+        name: Success Message (Discord)
+        uses: discord-actions/message@v2
+        with:
+          webhookUrl: ${{secrets.DISCORD_WEBHOOK}}
+          message: SUCCESSFUL in branch ${{github.ref}} by ${{github.actor}} on pull request
+
+      - if: ${{failure()}}
+        name: Failure Message (Discord)
+        uses: discord-actions/message@v2
+        with:
+          webhookUrl: ${{secrets.DISCORD_WEBHOOK}}
+          message: FAILURE in branch ${{github.ref}} by ${{github.actor}} on pull request
