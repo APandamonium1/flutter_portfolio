@@ -1,20 +1,50 @@
-class Project {
-  final String name;
-  final String description;
-  final String image;
-  final String link;
-  Project(this.name, this.description, this.image, this.link);
+/// Enum for different job types
+enum JobType { fullTime, partTime, internship }
+
+class WorkModel {
+  // Job role/title of the position
+  final String jobRole;
+  // Name of the organisation/company
+  final String organisationName;
+  // Date of the job duration (e.g., Jan 2022 - Present)
+  final String date;
+  // List of bullet points for responsibilities and achievements
+  final List<String> description;
+  // Type of job (Full-time, Part-time, Internship)
+  final JobType jobType;
+
+  /// Constructor for the WorkModel
+  WorkModel({
+    required this.jobRole,
+    required this.organisationName,
+    required this.date,
+    required this.description,
+    required this.jobType,
+  });
 }
 
-List<Project> projectList = [
-  Project(
-      'Flutter Portfolio',
-      'A portfolio website coded using Flutter. A way for me to say "Hello World".',
-      'assets/images/player.png',
-      'https://github.com/APandamonium1/flutter_portfolio'),
-  Project(
-      'ByteHackz 2023 Discord Bot',
-      'A Discord bot coded using discord.py with multiple APIs integrated in the slash commands to create some fun and convenience during the cohort-wide hackathon hosted by my club (NP Overflow).',
-      'assets/images/bytehackz_slash.png',
-      'https://github.com/np-overflow/Bytehackz-Bot-2-2023'),
+/// Sample data for testing and demonstration purposes
+List<WorkModel> workList = [
+  WorkModel(
+    jobRole: 'Computer Vision Intern',
+    organisationName: 'Tapall.ai',
+    date: 'Jan 2022 - Present',
+    jobType: JobType.internship,
+    description: [
+      'Developed scalable web applications using Flutter and Firebase.',
+      'Maintained cloud infrastructure and ensured high availability.',
+      'Collaborated with cross-functional teams for product design and development.'
+    ],
+  ),
+  WorkModel(
+    jobRole: 'Part-Time Coding & Robotics Instructor',
+    organisationName: 'NK Robotics',
+    date: 'Jun 2021 - Dec 2021',
+    jobType: JobType.partTime,
+    description: [
+      'Assisted in iOS app development using Swift.',
+      'Conducted code reviews and improved application performance.',
+      'Worked closely with the design team to enhance user experience.'
+    ],
+  ),
 ];
