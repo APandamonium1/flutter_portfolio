@@ -1,94 +1,105 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:flutter_portfolio/model/work_model.dart';
+import 'package:flutter_portfolio/constant.dart';
+import 'package:flutter_portfolio/view_model/getx_controllers/work_controller.dart';
 
-/// A widget to display details of a work experience.
-class WorkDetails extends StatelessWidget {
-  // The work experience model instance
-  final WorkModel work;
-
-  // Constructor to receive the work experience data
-  const WorkDetails({super.key, required this.work});
+class WorkDetail extends StatelessWidget {
+  final controller = Get.put(WorkController());
+  final int index;
+  WorkDetail({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      margin: const EdgeInsets.symmetric(vertical: 10),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.2),
-            blurRadius: 8,
-            spreadRadius: 2,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          /// Job Role
-          Text(
-            work.jobRole,
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-
-          /// Organization Name & Date
-          Padding(
-            padding: const EdgeInsets.only(top: 4),
-            child: Text(
-              '${work.organisationName} • ${work.date}',
-              style: TextStyle(fontSize: 16, color: Colors.grey[700]),
-            ),
-          ),
-
-          /// Job Type
-          Padding(
-            padding: const EdgeInsets.only(top: 4, bottom: 8),
-            child: Chip(
-              label: Text(
-                _capitalize(work.jobType.name),
-                style: const TextStyle(color: Colors.white),
-              ),
-              backgroundColor: _getJobTypeColor(work.jobType),
-            ),
-          ),
-
-          /// Description (Bullet Points)
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: work.description.map((desc) {
-              return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4),
-                child: Row(
+    return InkWell(
+        onHover: (value) {
+          controller.onHover(index, value);
+        },
+        onTap: () {},
+        borderRadius: BorderRadius.circular(30),
+        child: AnimatedContainer(
+          padding: const EdgeInsets.all(defaultPadding),
+          height: double.infinity,
+          width: double.infinity,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30), color: bgColor),
+          duration: const Duration(milliseconds: 500),
+          child: SingleChildScrollView(
+              child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Icon(Icons.circle, size: 6, color: Colors.black),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        desc,
-                        style: const TextStyle(fontSize: 14, height: 1.5),
-                      ),
+                /// **Job Role**
+                Text(
+                  workList[index].jobRole.toUpperCase(),
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                const SizedBox(
+                  height: defaultPadding / 2,
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    /// **Organisation & Date**
+                    Text(
+                      "${workList[index].organisationName} • ${workList[index].date}",
+                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                            color: Colors.grey,
+                          ),
                     ),
                   ],
                 ),
-              );
-            }).toList(),
-          ),
-        ],
-      ),
-    );
-  }
+                const SizedBox(
+                  height: defaultPadding / 2,
+                ),
 
-  /// Function to capitalize the first letter of a string
-  String _capitalize(String text) {
-    return text.isNotEmpty ? text[0].toUpperCase() + text.substring(1) : text;
+                /// **Job Type**
+                Chip(
+                  label: Text(
+                    // workList[index].jobType.name.capitalizeFirst ?? '',
+                    workList[index].formattedJobType,
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                  backgroundColor: _getJobTypeColor(workList[index].jobType),
+                ),
+                const SizedBox(
+                  height: defaultPadding / 2,
+                ),
+
+                /// **Description (Bullet Points)**
+                Column(
+                  children: workList[index]
+                      .description
+                      .map((desc) => Padding(
+                            padding: const EdgeInsets.only(left: 8.0),
+                            child: Row(
+                              children: [
+                                const Text("• ",
+                                    style: TextStyle(color: Colors.white)),
+                                Expanded(
+                                  child: Text(
+                                    desc,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .copyWith(color: Colors.white70),
+                                    softWrap: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ))
+                      .toList(),
+                ),
+                const SizedBox(
+                  height: defaultPadding,
+                )
+              ])),
+        ));
   }
 
   /// Function to get color based on job type

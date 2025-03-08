@@ -21,6 +21,18 @@ class WorkModel {
     required this.description,
     required this.jobType,
   });
+
+  /// Getter to return properly formatted job type
+  String get formattedJobType {
+    switch (jobType) {
+      case JobType.fullTime:
+        return "Full-time";
+      case JobType.partTime:
+        return "Part-time";
+      case JobType.internship:
+        return "Internship";
+    }
+  }
 }
 
 /// Sample data for testing and demonstration purposes
