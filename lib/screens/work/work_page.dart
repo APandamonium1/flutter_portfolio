@@ -20,21 +20,21 @@ class WorkPage extends StatelessWidget {
             const SizedBox(
               height: defaultPadding,
             ),
-          const TitleText(prefix: 'My', title: 'Projects'),
+          const TitleText(prefix: 'My', title: 'Work Experiences'),
           const SizedBox(
             height: defaultPadding,
           ),
           Expanded(
               child: Responsive(
-                  desktop: ProjectGrid(
+                  desktop: WorkGrid(
                     crossAxisCount: 3,
                   ),
-                  extraLargeScreen: ProjectGrid(
+                  extraLargeScreen: WorkGrid(
                     crossAxisCount: 4,
                   ),
-                  largeMobile: ProjectGrid(crossAxisCount: 1, ratio: 1.8),
-                  mobile: ProjectGrid(crossAxisCount: 1, ratio: 1.5),
-                  tablet: ProjectGrid(
+                  largeMobile: WorkGrid(crossAxisCount: 1, ratio: 1.8),
+                  mobile: WorkGrid(crossAxisCount: 1, ratio: 1.5),
+                  tablet: WorkGrid(
                     ratio: 1.4,
                     crossAxisCount: 2,
                   )))
