@@ -21,24 +21,24 @@ class EducationModel {
 
 List<EducationModel> educationList = [
   EducationModel(
-    school: 'NAN CHIAU HIGH SCHOOL',
-    year: '2016 - 2019',
+    school: 'Ngee Ann Polytechnic',
+    year: '2022 - 2025',
     description:
-        'Cambridge - Singapore GCE Ordinary Level (O-Level) Examination subjects: English, Mathematics, Additional Mathematics, Physics, Chemistry, Combined Humanities (Geography, Social Studies), Chinese Language, Higher Chinese Language',
+        'Diploma in Cybersecurity & Digital Forensics (CSF), Diploma Plus/Certificate in Advanced Computing Mathematics (CACM), Minor in Foreign Languages (French)',
     bulletPoints: [
       BulletPoint(
-        text: 'National Police Cadet Corps (NPCC)',
+        text: 'Overflow Technology Special Interest Group',
         subPoints: [
-          'Squadmasters Overall In-Charge (EXCO)',
-          '12th place in Inter-Unit Campcraft Competition 2017'
+          'Student Advisor (2024 - 2025)',
+          'Vice-President & Head of Operations (2023 - 2024)',
+          'Workgroup member (2022 - 2023)'
         ],
       ),
       BulletPoint(
-        text: 'FALCONS Leadership Programme',
-        subPoints: [
-          'Organised CCA Bazaar for the Secondary 1 cohort',
-          'Learnt and practised leadership skills on hiking trip to Hong Kong'
-        ],
+        text: 'NullSec Cybersecurity Special Interest Group',
+      ),
+      BulletPoint(
+        text: 'Girls-In-Tech Special Interest Group',
       ),
     ],
   ),
@@ -58,24 +58,24 @@ List<EducationModel> educationList = [
     ],
   ),
   EducationModel(
-    school: 'Ngee Ann Polytechnic',
-    year: '2022 - 2025',
+    school: 'NAN CHIAU HIGH SCHOOL',
+    year: '2016 - 2019',
     description:
-        'Diploma in Cybersecurity & Digital Forensics (CSF), Diploma Plus/Certificate in Advanced Computing Mathematics (CACM)',
+        'Cambridge - Singapore GCE Ordinary Level (O-Level) Examination subjects: English, Mathematics, Additional Mathematics, Physics, Chemistry, Combined Humanities (Geography, Social Studies), Chinese Language, Higher Chinese Language',
     bulletPoints: [
       BulletPoint(
-        text: 'Overflow Technology Special Interest Group',
+        text: 'National Police Cadet Corps (NPCC)',
         subPoints: [
-          'Student Advisor (2024 - 2025)',
-          'Vice-President & Head of Operations (2023 - 2024)',
-          'Workgroup member (2022 - 2023)'
+          'Squadmasters Overall In-Charge (EXCO)',
+          '12th place in Inter-Unit Campcraft Competition 2017'
         ],
       ),
       BulletPoint(
-        text: 'NullSec Cybersecurity Special Interest Group',
-      ),
-      BulletPoint(
-        text: 'Girls-In-Tech Special Interest Group',
+        text: 'FALCONS Leadership Programme',
+        subPoints: [
+          'Organised CCA Bazaar for the Secondary 1 cohort',
+          'Learnt and practised leadership skills on hiking trip to Hong Kong'
+        ],
       ),
     ],
   ),

@@ -145,26 +145,6 @@ class EducationDetail extends StatelessWidget {
                                           .toList(),
                                     ),
                                   ),
-                                // // "More" Button
-                                // Align(
-                                //   alignment: Alignment.bottomRight,
-                                //   child: GestureDetector(
-                                //     onTap: () {
-                                //       // TODO: Implement show more functionality
-                                //     },
-                                //     child: Text(
-                                //       "More",
-                                //       style: TextStyle(
-                                //         color: Colors.blue,
-                                //         decoration: TextDecoration.underline,
-                                //         fontSize: Theme.of(context)
-                                //             .textTheme
-                                //             .bodySmall!
-                                //             .fontSize,
-                                //       ),
-                                //     ),
-                                //   ),
-                                // ),
                               ],
                             ),
                           ))
