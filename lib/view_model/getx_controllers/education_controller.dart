@@ -5,7 +5,7 @@ class EducationController extends GetxController {
     false,
     false,
     false,
-    // false,
+    false,
     // false,
     // false,
     // false,

@@ -21,6 +21,17 @@ class EducationModel {
 
 List<EducationModel> educationList = [
   EducationModel(
+    school: 'Singapore University of Technology and Design',
+    year: 'Incoming 2025',
+    description:
+        'To be updated. Expected to pursue a Bachelor of Science in Design and Artificial Intelligence (DAI).',
+    bulletPoints: [
+      BulletPoint(
+        text: 'To be updated.',
+      ),
+    ],
+  ),
+  EducationModel(
     school: 'Ngee Ann Polytechnic',
     year: '2022 - 2025',
     description:

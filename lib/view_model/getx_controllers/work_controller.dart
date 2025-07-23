@@ -4,7 +4,7 @@ class WorkController extends GetxController {
   RxList<bool> hovers = [
     false,
     false,
-    // false,
+    false,
     // false,
     // false,
     // false,
