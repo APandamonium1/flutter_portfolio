@@ -38,7 +38,7 @@ class WorkModel {
 /// Sample data for testing and demonstration purposes
 List<WorkModel> workList = [
   WorkModel(
-    jobRole: 'Part-Time Coding & Robotics Instructor',
+    jobRole: 'Coding & Robotics Instructor',
     organisationName: 'Kodecoon Academy',
     date: 'Apr 2025 - Present',
     jobType: JobType.partTime,
@@ -60,7 +60,7 @@ List<WorkModel> workList = [
     ],
   ),
   WorkModel(
-    jobRole: 'Part-Time Coding & Robotics Instructor',
+    jobRole: 'Coding & Robotics Instructor',
     organisationName: 'NK Robotics',
     date: 'Dec 2021 - August 2024',
     jobType: JobType.partTime,
