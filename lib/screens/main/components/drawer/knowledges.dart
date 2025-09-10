@@ -13,7 +13,7 @@ class Knowledges extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(vertical: 10),
           child: Text(
-            'Knowledge',
+            'Knowledges',
             style: TextStyle(color: Colors.white),
           ),
         ),
