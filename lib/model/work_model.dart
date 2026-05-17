@@ -38,25 +38,36 @@ class WorkModel {
 /// Sample data for testing and demonstration purposes
 List<WorkModel> workList = [
   WorkModel(
-    jobRole: 'Computer Vision Intern',
-    organisationName: 'Tapall.ai',
-    date: 'Jan 2022 - Present',
-    jobType: JobType.internship,
+    jobRole: 'Coding & Robotics Instructor',
+    organisationName: 'Kodecoon Academy',
+    date: 'Apr 2025 - Present',
+    jobType: JobType.partTime,
     description: [
-      'Developed scalable web applications using Flutter and Firebase.',
-      'Maintained cloud infrastructure and ensured high availability.',
-      'Collaborated with cross-functional teams for product design and development.'
+      'To be updated',
+      'Update 2 coming soon',
+      'Update 3 to be coming soon'
     ],
   ),
   WorkModel(
-    jobRole: 'Part-Time Coding & Robotics Instructor',
+    jobRole: 'Computer Vision Intern',
+    organisationName: 'Tapall.ai',
+    date: 'Sep 2024 - Jan 2025',
+    jobType: JobType.internship,
+    description: [
+      'To be updated',
+      'Update 2 coming soon',
+      'Update 3 to be coming soon'
+    ],
+  ),
+  WorkModel(
+    jobRole: 'Coding & Robotics Instructor',
     organisationName: 'NK Robotics',
-    date: 'Jun 2021 - Dec 2021',
+    date: 'Dec 2021 - August 2024',
     jobType: JobType.partTime,
     description: [
-      'Assisted in iOS app development using Swift.',
-      'Conducted code reviews and improved application performance.',
-      'Worked closely with the design team to enhance user experience.'
+      'To be updated',
+      'Update 2 coming soon',
+      'Update 3 to be coming soon'
     ],
   ),
 ];

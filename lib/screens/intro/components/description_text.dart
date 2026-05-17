@@ -14,7 +14,7 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 200),
       builder: (context, value, child) {
         return Text(
-          'I\'m a Year 3 Diploma in Cybersecurity & Digital ${Responsive.isLargeMobile(context) ? '\n' : ''}Forensics student from ${!Responsive.isLargeMobile(context) ? '\n' : ''}Ngee Ann Polytechnic.',
+          'Aspiring tech enthusiast with a passion for coding and robotics.', // ${Responsive.isLargeMobile(context) ? '\n' : ''}
           // 'I\'m a Year 3 Diploma in Cybersecurity & Digital Forensics student from Ngee Ann Polytechnic.',
           maxLines: 2,
           overflow: TextOverflow.ellipsis,

@@ -18,11 +18,45 @@ class ContactIcon extends StatelessWidget {
                 launchUrl(Uri.parse('https://linkedin.com/in/xu-jiawei-nic'));
               },
               icon: SvgPicture.asset('assets/icons/linkedin.svg')),
+          const Spacer(),
           IconButton(
               onPressed: () {
                 launchUrl(Uri.parse('https://github.com/APandamonium1'));
               },
               icon: SvgPicture.asset('assets/icons/github.svg')),
+          const Spacer(),
+          IconButton(
+              onPressed: () {
+                launchUrl(Uri.parse('mailto:jiawei709.official@gmail.com'));
+              },
+              icon: SvgPicture.asset(
+                'assets/icons/email.svg',
+                width: 20,
+                height: 20,
+                colorFilter:
+                    const ColorFilter.mode(Color(0xFF8C8C8E), BlendMode.srcIn),
+              )),
+          const Spacer(),
+          IconButton(
+              onPressed: () {
+                launchUrl(Uri.parse('https://wa.me/6597717202'));
+              },
+              // icon uses #8C8C8E
+              icon: SvgPicture.asset('assets/icons/whatsapp.svg',
+                  width: 20,
+                  height: 20,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xFF8C8C8E), BlendMode.srcIn))),
+          const Spacer(),
+          IconButton(
+              onPressed: () {
+                launchUrl(Uri.parse('https://t.me/apandamonium'));
+              },
+              icon: SvgPicture.asset('assets/icons/telegram.svg',
+                  width: 20,
+                  height: 20,
+                  colorFilter: const ColorFilter.mode(
+                      Color(0xFF8C8C8E), BlendMode.srcIn))),
           const Spacer(),
         ],
       ),

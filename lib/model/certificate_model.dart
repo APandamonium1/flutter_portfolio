@@ -19,7 +19,7 @@ List<CertificateModel> certificateList = [
     name: 'AWS Certified Cloud Practitional',
     organisation: 'Amazon Web Services (AWS)',
     date: 'JUL 2023',
-    skills: 'Cloud Computing, Cloud Infrastructure, \nCloud Security',
+    skills: 'Cloud Computing, Cloud Infrastructure, Cloud Security',
     credential:
         'https://www.credly.com/badges/19b52569-4014-49bb-a06a-378e1b8bd3ee/linked_in_profile',
   ),

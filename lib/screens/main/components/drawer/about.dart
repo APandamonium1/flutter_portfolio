@@ -26,7 +26,7 @@ class About extends StatelessWidget {
               height: defaultPadding / 4,
             ),
             const Text(
-              'Year 3 Diploma in Cybersecurity and\nDigital Forensics Student',
+              'Freshmore student at Singapore University of Technology and Design (SUTD).',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w200, height: 1.5),
             ),
