@@ -21,7 +21,26 @@ class ImageViewer {
                   body: Container(
                     color: Colors.white,
                     child: Center(
-                        child: PhotoView(imageProvider: AssetImage(image))),
+                        child: PhotoView(
+                      imageProvider: NetworkImage(image),
+                      errorBuilder: (context, error, stackTrace) {
+                        return Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.error_outline,
+                                  color: Colors.grey, size: 50),
+                              const SizedBox(height: 16),
+                              Text('Failed to load image',
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.grey)),
+                            ],
+                          ),
+                        );
+                      },
+                    )),
                   )),
             ),
           ),

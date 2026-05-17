@@ -13,6 +13,29 @@ class ProjectDetail extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // Project Image
+        ClipRRect(
+          borderRadius: BorderRadius.circular(15),
+          child: Image.network(
+            projectList[index].image,
+            height: 100,
+            width: double.infinity,
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) {
+              return Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.grey[800],
+                child: const Center(
+                  child: Icon(Icons.image_not_supported, color: Colors.grey),
+                ),
+              );
+            },
+          ),
+        ),
+        const SizedBox(
+          height: defaultPadding / 4,
+        ),
         Align(
           alignment: Alignment.topCenter,
           child: Text(
@@ -23,13 +46,9 @@ class ProjectDetail extends StatelessWidget {
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
-        Responsive.isMobile(context)
-            ? const SizedBox(
-                height: defaultPadding / 2,
-              )
-            : const SizedBox(
-                height: defaultPadding,
-              ),
+        const SizedBox(
+          height: defaultPadding / 4,
+        ),
         // Scrollable Container for Description
         Expanded(
           child: SingleChildScrollView(
