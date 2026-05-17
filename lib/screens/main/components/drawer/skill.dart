@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_portfolio/constant.dart';
 
-class KnowledgeText extends StatelessWidget {
-  const KnowledgeText({super.key, required this.knowledge});
-  final String knowledge;
+class SkillText extends StatelessWidget {
+  const SkillText({super.key, required this.skill});
+  final String skill;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class KnowledgeText extends StatelessWidget {
           SizedBox(
             width: defaultPadding / 2,
           ),
-          Text(knowledge),
+          Text(skill),
         ],
       ),
     );

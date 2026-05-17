@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/screens/main/components/drawer/contact_icons.dart';
 import 'package:flutter_portfolio/screens/main/components/drawer/personal_info.dart';
 import 'package:flutter_portfolio/constant.dart';
-import 'package:flutter_portfolio/screens/main/components/drawer/knowledges.dart';
+import 'package:flutter_portfolio/screens/main/components/drawer/skills.dart';
 import 'package:flutter_portfolio/screens/main/components/drawer/about.dart';
-import 'package:flutter_portfolio/screens/main/components/drawer/my_skill.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -12,7 +11,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: primaryColor,
+      backgroundColor: bgColor,
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -26,7 +25,7 @@ class CustomDrawer extends StatelessWidget {
                   children: [
                     PersonalInfo(),
                     // MySKills(),
-                    Knowledges(),
+                    Skills(),
                     Divider(),
                     SizedBox(
                       height: defaultPadding,
